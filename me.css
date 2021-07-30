@@ -1,0 +1,179 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.bg{
+    background-color: #1b1a17;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #1abc9c;
+    transition: 0.6s ease;
+}
+
+.txtheader{
+    font-family: 'Hanson', serif;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.6s ease;
+}
+
+.txtheader:hover{
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    transition: 0.6s ease;
+    cursor:default;
+}
+
+
+.bundaran{
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+    animation: Slide_Up 1s ease;
+}
+
+.nama{
+    text-align: center;
+    font-family:'Plat Nomor',serif;
+    color: white;
+    margin-top: 10px;
+    animation: Slide_Left 1s ease;
+}
+.bio{
+    font-family: 'montserrat', serif;
+    text-align: center;
+    font-weight: 800;
+    color: white;
+    animation: Slide_Left 2s ease;
+}
+.btn{
+    font-family: 'montserrat', serif;
+    font-weight: 800;
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+    border: white;
+    width: 25%;
+    height: 45px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    animation: ZoomIn 1s ease;
+}
+
+.btn:hover{
+    background-color: #1b1a17;
+    border: 2px solid white;
+    margin: 0 auto;
+    color: white;
+    display: block;
+    width: 30%;
+    height: 65px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.link{
+    text-decoration: none;
+}
+
+
+@keyframes Slide_Up {
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(1000);
+    }
+}
+
+@keyframes ZoomIn {
+    0%{
+        transform: scale(0%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+
+@keyframes naik {
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(1000);
+    }
+}
+
+
+@keyframes Slide_Left{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translatex(0%);
+    }
+}
+
+@keyframes Slide_Right{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@media screen and (max-width: 360px){
+    .btn{
+        font-family: 'montserrat', serif;
+        font-weight: 800;
+        background-color: white;
+        margin: 0 auto;
+        display: block;
+        border: white;
+        width: 20%;
+        height: 35px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: 0.5s ease;
+        font-size: 10px;
+        animation: naik 1s ease;
+    }
+    .btn:hover{
+        background-color: #1b1a17;
+        font-size: 10px;
+        border: 2px solid white;
+        margin: 0 auto;
+        color: white;
+        display: block;
+        width: 25%;
+        height: 40px;
+        cursor: pointer;
+        text-transform: uppercase;
+        animation: naik 1s ease;
+    }
+    .bio{
+        font-size: 14px;
+        font-family: 'raleway', serif;
+        text-align: center;
+        font-weight: 100;
+        color: white;
+        animation: Slide_Left 2s ease;
+    }
+    .bundaran{
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        width: 150px;
+        clip-path: circle();
+        animation: Slide_Up 1s ease;
+    }
+}
