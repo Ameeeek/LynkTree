@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: fac;
+    src: url(H);
+}
 *{
     margin: 0 auto;
     padding: 0;
@@ -64,10 +67,16 @@
     font-size: 24px;
     color: black !important;
     background-color: white !important;
+    transition: 0.6s ease;
+}
+.btn-primary:hover{
+    color: white !important;
+    background-color:transparent!important;
 }
 .btn{
     animation: ZoomIn 1s ease;
 }
+
 @keyframes Slide_Up {
     0%{
         transform: translateY(250px);
