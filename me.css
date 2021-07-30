@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: fac;
+    src: url(H);
+}
 *{
     margin: 0 auto;
     padding: 0;
@@ -14,8 +17,9 @@
 }
 
 .txtheader{
-    font-family: 'Hanson', serif;
+    font-family: 'Poppins', serif;
     justify-content: center;
+    font-weight: 800px;
     padding-top: 10px;
     font-size: 24px;
     display: flex;
@@ -43,7 +47,7 @@
 
 .nama{
     text-align: center;
-    font-family:'Plat Nomor',serif;
+    font-family:'poppins',serif;
     color: white;
     margin-top: 10px;
     animation: Slide_Left 1s ease;
