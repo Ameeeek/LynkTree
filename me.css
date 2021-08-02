@@ -23,6 +23,8 @@
     align-items: center;
     color: white;
     transition: 0.6s ease;
+    object-fit: cover;
+    object-position: center;
 }
 
 .txtheader:hover{
@@ -119,3 +121,8 @@
     }
 }
 
+@media (max-width: 768px){
+    .txtheader h1{
+        margin-top:5px;
+    }
+}
